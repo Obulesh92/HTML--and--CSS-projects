@@ -15,7 +15,7 @@ body {
     color: whitesmoke;
     padding: 10px;
     background-color: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     box-shadow: 2px 2px 2px 2px whitesmoke;
     max-width: 29vw;
     height: 72vh;
@@ -97,6 +97,7 @@ body {
     font-size: 15px;
     padding: 5px;
     border-radius: 5px;
+    background-color:white;
     border: 1px solid lightgray;
 }
 
