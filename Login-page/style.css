@@ -1,0 +1,164 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url("./38636.jpg");
+}
+
+.Login_main {
+    display: block;
+    color: whitesmoke;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    max-width: 29vw;
+    height: 72vh;
+    border-radius: 10px;
+    margin: 0% auto;
+    position: relative;
+    top: 120px;
+}
+
+.Login_top {
+    padding: 10px;
+    min-height: 15vh;
+}
+
+.Login_top p {
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.Login_with {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Login_with button {
+    width: 20vh;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px white;
+    border: 1px solid lightgray;
+}
+
+.Login_with button a {
+    font-size: 17px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.Login_bottom {
+    margin: 10px;
+    height: 50vh;
+    padding: 8px;
+}
+
+.Login_bottom fieldset {
+    width: 27vw;
+    height: 46vh;
+    border: 0px solid white;
+}
+
+.Login_bottom fieldset form {
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.Login_bottom fieldset form #email,
+.Login_bottom fieldset form #pwd {
+    width: 23vw;
+    height: 5.5vh;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px solid red;
+    background-color: transparent;
+    border-bottom: 1px solid lightgray;
+}
+
+.Login_bottom fieldset form #email:hover,
+.Login_bottom fieldset form #pwd:hover {
+    width: 23vw;
+    height: 5.5vh;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.Login_bottom fieldset form a {
+    height: 20vh;
+    float: right;
+    font-size: 16px;
+    color: #626cd6;
+    padding-right: 15px;
+}
+
+.Login_bottom fieldset form a:hover {
+    text-decoration: underline;
+}
+
+.Login_bottom fieldset form #submit {
+    width: 16vw;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    position: relative;
+    left: 70px;
+    color: white;
+    background-color: #626cd6;
+}
+
+.Login_bottom fieldset form #submit:hover {
+    background-color: #4553e9;
+}
+
+.Login_bottom fieldset p {
+    color: whitesmoke;
+    width: 70%;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    left: 40px;
+}
+
+.Login_bottom fieldset a {
+    color: #626cd6;
+}
+
+.Login_bottom fieldset a:hover {
+    text-decoration: underline;
+}
+
+.media {
+    display: none;
+    font-size: 25px;
+    color: red;
+}
+
+@media (max-width:1100px) {
+    .Login_main {
+        display: none;
+    }
+    .media {
+        display: inline;
+    }
+    body {
+        background-image: none;
+    }
+}
