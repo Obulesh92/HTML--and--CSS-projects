@@ -1,0 +1,232 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: #D64218;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.nav h1 a {
+    font-size: 22px;
+    color: black;
+}
+
+.nav h1 a span {
+    color: white;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#toggle,
+label {
+    display: none;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url(./pxfuel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .hero-sub {
+    float: right;
+    position: relative;
+    top: 40%;
+    right: 30%;
+}
+
+.about {
+    height: 60vh;
+    background-color: black;
+}
+
+.about p {
+    text-align: center;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.about .sub-about {
+    height: 40vh;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111417;
+}
+
+.about .sub-about p {
+    font-size: 20px;
+}
+
+.about .sub-about .bio img {
+    border-radius: 20%;
+    position: relative;
+    left: 40%;
+    width: 150px;
+    height: 180px;
+}
+
+.about .sub-about .bio {
+    width: 50%;
+}
+
+.about .sub-about p span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: #D64218;
+}
+
+.about .sub-about .skills {
+    width: 50%;
+    height: auto;
+}
+
+.skills h3 {
+    text-align: center;
+}
+
+.skills p {
+    text-align: left;
+}
+
+.skills .sub-skills {
+    width: 80%;
+    background-color: #ddd;
+}
+
+.skills .sub-skills .html {
+    width: 90%;
+    background-color: #D64218;
+    animation: html 2s;
+}
+
+.skills .sub-skills .css {
+    width: 60%;
+    background-color: #D64218;
+    animation: css 2s;
+}
+
+.skills .sub-skills .js {
+    width: 50%;
+    background-color: #D64218;
+    animation: js 2s;
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+        background-color: #D64218;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+        background-color: #D64218;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+        background-color: #D64218;
+    }
+}
+
+footer {
+    background-color: #32373D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width:680px) {
+    p {
+        font-size: 12px;
+    }
+    .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    #toggle:checked~.list {
+        display: flex;
+    }
+    label {
+        display: block;
+    }
+    h1 {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .about {
+        height: auto;
+        width: auto;
+    }
+    .about .sub-about {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about .sub-about .bio {
+        width: 80vw;
+    }
+    .about .sub-about .bio img {
+        width: auto;
+        position: relative;
+        left: 25%;
+    }
+    .about .sub-about .skills {
+        width: 80vw;
+    }
+    .skills .sub-skills {
+        width: 100%;
+        background-color: #ddd;
+    }
+}
