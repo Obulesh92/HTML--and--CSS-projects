@@ -1,0 +1,491 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: 1pc;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url("./background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border-bottom: 2px solid white;
+    z-index: 1;
+}
+
+.nav h1 {
+    color: white;
+}
+
+.list {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+#toggle,
+label {
+    display: none;
+}
+
+.nav .list button {
+    width: 110px;
+    height: 35px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    justify-content: center;
+}
+
+.hero {
+    height: 58vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url("./background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .hero-left h1 {
+    color: white;
+}
+
+.hero .hero-left p {
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.7vw;
+    border-radius: 50%;
+    border-bottom: 2px solid #D64218;
+    text-align: center;
+}
+
+
+/* -------------About Page------------- */
+
+.about {
+    width: 100%;
+    height: 50vh;
+}
+
+.about .about-top {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.about .about-top .sub-about {
+    display: flex;
+    height: 43vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.about .about-top.sub-about .sb-left {
+    width: 40%;
+}
+
+.about .about-top .sub-about .sb-left img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border-right: 8px solid #d64218;
+    background-color: lightblue;
+}
+
+.about .sub-about .sb-right {
+    width: 55%;
+}
+
+.about .sub-about .sb-right p {
+    text-align: justify;
+}
+
+.about .sub-about .sb-right strong {
+    font-weight: bold;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+
+/* -----------Skills page----------- */
+
+.skills {
+    height: 50vh;
+}
+
+.skills p {
+    text-align: justify;
+}
+
+.skills .div-skills {
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 38vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.skills .div-skills .skills-r1 .sub-skills {
+    border: 1px solid gray;
+}
+
+.skills .div-skills .skills-r2 .sub-skills {
+    border: 1px solid gray;
+}
+
+.skills .div-skills .skills-r1 {
+    width: 40%;
+    align-items: center;
+}
+
+.skills .div-skills .skills-r2 {
+    width: 40%;
+    align-items: center;
+}
+
+.skills .div-skills .skills-r1 .html {
+    width: 90%;
+    background-color: #D64218;
+    animation: html 5s;
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+        background-color: #D64218;
+    }
+}
+
+.skills .div-skills .skills-r1 .css {
+    width: 60%;
+    background-color: #D64218;
+    animation: css 5s;
+}
+
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+        background-color: #D64218;
+    }
+}
+
+.skills .div-skills .skills-r1 .js {
+    width: 50%;
+    background-color: #D64218;
+    animation: js 5s;
+}
+
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+        background-color: #D64218;
+    }
+}
+
+.skills .div-skills .skills-r2 .html {
+    width: 80%;
+    background-color: #D64218;
+    animation: python 5s;
+}
+
+@keyframes python {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+        background-color: #D64218;
+    }
+}
+
+.skills .div-skills .skills-r2 .c {
+    width: 60%;
+    background-color: #D64218;
+    animation: c 5s;
+}
+
+@keyframes c {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+        background-color: #D64218;
+    }
+}
+
+
+/* -------services page-------- */
+
+.services {
+    height: 70vh;
+    background-color: #f8f8f8;
+}
+
+.services .sub1-services {
+    height: 28vh;
+    display: flex;
+    margin-left: 12%;
+    margin-right: 12%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .sub1-services .serv1 {
+    width: 35vh;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
+
+.services .sub1-services .serv2 {
+    width: 35vh;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
+
+.services .sub1-services .serv1 h2 {
+    font-size: 1.5vw;
+}
+
+.services .sub1-services .serv1 p {
+    text-align: justify;
+    color: gray;
+}
+
+
+/* -----contact page----- */
+
+.contact {
+    height: auto;
+    background-color: #212529;
+}
+
+.contact h2 {
+    color: whitesmoke;
+}
+
+.contact .sub-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.contact .sub-contact .con1 {
+    width: 20%;
+    height: auto;
+}
+
+.contact .sub-contact .con1 h3 {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.contact .sub-contact .con1 p {
+    color: gray;
+    font-size: 1vw;
+}
+
+@media (max-width:800px) {
+    a {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .list {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        gap: 5px;
+        border-radius: 40px;
+    }
+    .list li a {
+        color: #000;
+    }
+    .nav .list {
+        gap: 10px;
+    }
+    .nav .list button {
+        width: 30vw;
+        height: 25px;
+        border: 2px solid #000;
+    }
+    .nav .list button a {
+        color: #000;
+    }
+    #toggle:checked~.list,
+    .nav button {
+        display: flex;
+    }
+    label {
+        display: block;
+    }
+    .hero {
+        height: 75vh;
+    }
+    .hero .hero-left {
+        width: auto;
+    }
+    .about {
+        height: auto;
+        padding: 3%;
+        flex-direction: column;
+    }
+    .about .about-top {
+        margin: 0%;
+    }
+    .about .about-top .sub-about {
+        flex-direction: column;
+        height: auto;
+    }
+    .about .sub-about .sb-right {
+        width: 100%;
+    }
+    /* ----skills page----- */
+    .skills {
+        padding: 3%;
+        height: auto;
+        margin: 0%;
+    }
+    .skills .div-skills {
+        flex-direction: column-reverse;
+        margin: 0%;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills .div-skills .skills-r1 {
+        width: 85%;
+        align-items: center;
+    }
+    .skills .div-skills .skills-r2 {
+        width: 85%;
+        align-items: center;
+    }
+    /* ---services page----- */
+    .services {
+        padding: 3%;
+        height: auto;
+        width: 100%;
+        margin: 0%;
+    }
+    .services .sub1-services {
+        height: auto;
+        margin: 0%;
+        width: 100%;
+    }
+    .services .sub1-services .serv1 {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .services .sub1-services .serv2 {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .services .sub1-services .serv1 h2 {
+        font-size: 16px;
+    }
+    /* ---contact page */
+    .contact {
+        padding: 3%;
+        height: auto;
+        width: 100%;
+    }
+    .contact .sub-contact {
+        flex-direction: column;
+        height: auto;
+    }
+    .contact .sub-contact .con1 {
+        width: 100%;
+        height: auto;
+    }
+    .contact .sub-contact .con1 h3 {
+        color: white;
+        font-size: 13px;
+    }
+    .contact .sub-contact .con1 p {
+        color: gray;
+        font-size: 15px;
+    }
+}
